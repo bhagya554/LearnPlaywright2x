@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VWO Invalid Login Execution Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --total-color: #3b82f6;
+            --pass-color: #10b981;
+            --fail-color: #ef4444;
+            --table-header: #f1f5f9;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .report-container {
+            width: 100%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 32px;
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .generated-at {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .stat-card.total .stat-value {
+            color: var(--total-color);
+        }
+
+        .stat-card.passed .stat-value {
+            color: var(--pass-color);
+        }
+
+        .stat-card.failed .stat-value {
+            color: var(--fail-color);
+        }
+
+        .stat-card.rate .stat-value {
+            color: var(--pass-color);
+        }
+
+        .table-container {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        thead {
+            background-color: var(--table-header);
+        }
+
+        th {
+            padding: 16px 24px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 20px 24px;
+            font-size: 14px;
+            border-top: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .tc-id {
+            font-weight: 600;
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 500;
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+
+        .status-pill::before {
+            content: "✓";
+            margin-right: 4px;
+            font-weight: 700;
+        }
+
+        .status-pill.fail {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .status-pill.fail::before {
+            content: "✕";
+        }
+
+        .details-text {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="report-container">
+        <header>
+            <h1>VWO Invalid Login Execution Report</h1>
+            <div class="generated-at">Generated: 2/4/2026, 4:34:16 pm IST IST</div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card total">
+                <div class="stat-label">Total Tests</div>
+                <div class="stat-value">9</div>
+            </div>
+            <div class="stat-card passed">
+                <div class="stat-label">Passed</div>
+                <div class="stat-value">5</div>
+            </div>
+            <div class="stat-card failed">
+                <div class="stat-label">Failed</div>
+                <div class="stat-value">4</div>
+            </div>
+            <div class="stat-card rate">
+                <div class="stat-label">Pass Rate</div>
+                <div class="stat-value">56%</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 15%">Test ID</th>
+                        <th style="width: 45%">Description</th>
+                        <th style="width: 20%">Status</th>
+                        <th style="width: 20%">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tc-id">TC-001</td>
+                        <td>Arabic Login with Invalid Credentials</td>
+                        <td><span class="status-pill">Pass</span></td>
+                        <td class="details-text">Error Msg Displayed</td>
+                    </tr>
+                    <tr>
+                        <td class="tc-id">TC-002</td>
+                        <td>Chinese Login with Invalid Credentials</td>
+                        <td><span class="status-pill">Pass</span></td>
+                        <td class="details-text">Error Msg Displayed</td>
+                    </tr>
+                    <tr>
+                        <td class="tc-id">TC-003</td>
+                        <td>Dummy Standard Login with Invalid Credentials</td>
+                        <td><span class="status-pill">Pass</span></td>
+                        <td class="details-text">Error Msg Displayed</td>
+                    </tr>
+                    <tr>
+                        <td class="tc-id">TC-004</td>
+                        <td>Invalid Format Email Address Login</td>
+                        <td><span class="status-pill">Pass</span></td>
+                        <td class="details-text">Error Msg Displayed</td>
+                    </tr>
+                    <tr>
+                        <td class="tc-id">TC-005</td>
+                        <td>Empty Fields Login attempt</td>
+                        <td><span class="status-pill">Pass</span></td>
+                        <td class="details-text">Error Msg Displayed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
