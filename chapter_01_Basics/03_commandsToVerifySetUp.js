@@ -6,4 +6,4 @@ console.log(process.platform)
 console.log(process.arch)
 //x64 or arm64
 
-console.log("Node Version",process.version)
+console.log("Node Version", process.version)
