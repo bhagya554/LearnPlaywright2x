@@ -2,8 +2,6 @@
 
 Reading input from the user in Node.js using built-in `readline` and the `prompt-sync` package.
 
-> Files are placeholders and will be filled in as the chapter progresses.
-
 ## Files
 
 | File | Topic |

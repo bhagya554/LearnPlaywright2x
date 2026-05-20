@@ -14,6 +14,7 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 8: Switch Statement](chapter_08_switch_statement/)** — `switch`, `break`, `default`, fall-through
 - **[Chapter 9: User Input](chapter_09_UserInput/)** — Reading user input via `readline` and `prompt-sync`
 - **[Assignments](Assignments/)** — Practice problems
+- **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **VSCode Shortcuts** — Keyboard shortcuts for [Windows](VSCode_KeyboardShortcuts_Windows.md) and [Mac](VSCode_KeyboardShortcuts_Mac.md)
 
 ## Prerequisites

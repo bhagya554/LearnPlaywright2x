@@ -2,8 +2,6 @@
 
 The `switch` statement in JavaScript — syntax, `break`, `default`, fall-through, and grouped cases.
 
-> Files are placeholders and will be filled in as the chapter progresses.
-
 ## Files
 
 | File | Topic |
