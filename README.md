@@ -13,8 +13,10 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 7: If / Else](chapter_07_If_else/)** — Conditional logic with `if`, `else if`, `else`
 - **[Chapter 8: Switch Statement](chapter_08_switch_statement/)** — `switch`, `break`, `default`, fall-through
 - **[Chapter 9: User Input](chapter_09_UserInput/)** — Reading user input via `readline` and `prompt-sync`
+- **[Chapter 10: Loops](chapter_10_Loops/)** — `for`, `while`, `do...while`, and loop control with `break`/`continue`
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
+- **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
 - **VSCode Shortcuts** — Keyboard shortcuts for [Windows](VSCode_KeyboardShortcuts_Windows.md) and [Mac](VSCode_KeyboardShortcuts_Mac.md)
 
 ## Prerequisites
