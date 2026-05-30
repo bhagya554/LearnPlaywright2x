@@ -15,3 +15,7 @@ Creating, accessing, modifying, searching, iterating over, and transforming Java
 | `89_Searching.js` | Searching — `indexOf`, `lastIndexOf`, `includes`, `find`, `findIndex`, `findLast`, `findLastIndex` |
 | `90_IterateOverArray.js` | Iteration — classic `for`, `for...of`, `forEach`, `for...in` |
 | `91_Transform_Array.js` | Transformation — `map`, `filter`, `reduce`, `flat` |
+| `92_Arrays.js` | Sorting — `sort()` default lexicographic vs numeric compare function `(a, b) => a - b` |
+| `93_Array_Slicing.js` | `slice` vs `splice` — non-mutating slice (with negative indexes) vs mutating splice |
+| `94_Concat_Array.js` | Combining arrays — `concat`, spread `[...a, ...b]`, and `join` |
+| `95_Array_Checking.js` | Validation — `Array.isArray`, `every`, `some` (with a Playwright status-code example) |

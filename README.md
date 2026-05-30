@@ -14,7 +14,8 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 8: Switch Statement](chapter_08_switch_statement/)** — `switch`, `break`, `default`, fall-through
 - **[Chapter 9: User Input](chapter_09_UserInput/)** — Reading user input via `readline` and `prompt-sync`
 - **[Chapter 10: Loops](chapter_10_Loops/)** — `for`, `while`, `do...while`, and loop control with `break`/`continue`
-- **[Chapter 11: Arrays](chapter_11_Arrays/)** — Creating, accessing, modifying, searching, iterating, and transforming arrays
+- **[Chapter 11: Arrays](chapter_11_Arrays/)** — Creating, accessing, modifying, searching, iterating, transforming, sorting, slicing, concatenating, and validating arrays
+- **[Chapter 12: Functions](chapter_12_Functions/)** — Function definition and calling, the 4 function types, function expressions, and arrow functions
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
