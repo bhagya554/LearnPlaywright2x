@@ -16,9 +16,11 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 10: Loops](chapter_10_Loops/)** — `for`, `while`, `do...while`, and loop control with `break`/`continue`
 - **[Chapter 11: Arrays](chapter_11_Arrays/)** — Creating, accessing, modifying, searching, iterating, transforming, sorting, slicing, concatenating, and validating arrays
 - **[Chapter 12: Functions](chapter_12_Functions/)** — Function definition and calling, the 4 function types, function expressions, arrow functions, IIFEs, default/rest parameters, spread, scope, closures, higher-order and pure functions
+- **[Chapter 13: Strings](chapter_13_Strings/)** — String creation, properties, searching, substrings, transforming, replacing, concatenation, splitting, joining, and conversion
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
+- **[Task — 03 Jun 2026 (Strings)](Task_03_Jun_2026_Strings/)** — String manipulation practice problems
 - **VSCode Shortcuts** — Keyboard shortcuts for [Windows](VSCode_KeyboardShortcuts_Windows.md) and [Mac](VSCode_KeyboardShortcuts_Mac.md)
 
 ## Prerequisites
