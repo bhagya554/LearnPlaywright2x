@@ -18,7 +18,7 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 12: Functions](chapter_12_Functions/)** — Function definition and calling, the 4 function types, function expressions, arrow functions, IIFEs, default/rest parameters, spread, scope, closures, higher-order and pure functions
 - **[Chapter 13: Strings](chapter_13_Strings/)** — String creation, properties, searching, substrings, transforming, replacing, concatenation, splitting, joining, and conversion
 - **[Chapter 14: Objects](chapter_14_Objects/)** — Object creation, access, modification, destructuring, spread, getters/setters, primitive vs reference types
-- **[Chapter 15: 2D Arrays](chapter_15_2D_Array/)** — Two-dimensional arrays, nested iteration, functional transforms, star patterns
+- **[Chapter 15: 2D Arrays](chapter_15_2D_Array/)** — Two-dimensional arrays, nested iteration (row-wise), functional transforms (`map` + `reduce`, `includes`), star patterns
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
