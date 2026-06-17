@@ -20,6 +20,7 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 14: Objects](chapter_14_Objects/)** — Object creation, access, modification, destructuring, spread, getters/setters, primitive vs reference types
 - **[Chapter 15: 2D Arrays](chapter_15_2D_Array/)** — Two-dimensional arrays, nested iteration (row-wise), functional transforms (`map` + `reduce`, `includes`), star patterns
 - **[Chapter 16: Callback Functions](chapter_16_CallBack_Function/)** — Synchronous and asynchronous callbacks, callback hell, callbacks with parameters and return values
+- **[Chapter 17: Promises](chapter_17_Promises/)** — Creating and consuming promises, resolving callback hell, `Promise.all` vs `Promise.allSettled`
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
