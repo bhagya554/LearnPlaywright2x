@@ -7,6 +7,8 @@ Getting started with Playwright — project setup, Playwright as a dependency, a
 | Entry | Description |
 |-------|-------------|
 | `package.json` | Playwright dependency (`^1.61.0`) |
+| `playwright.config.ts` | Playwright Test configuration |
+| `tests/` | Test specs (login flows, examples) |
 | `pdfFiles/google.pdf` | Example PDF downloaded via Playwright |
 
 

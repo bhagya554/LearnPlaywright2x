@@ -22,7 +22,8 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 16: Callback Functions](chapter_16_CallBack_Function/)** — Synchronous and asynchronous callbacks, callback hell, callbacks with parameters and return values
 - **[Chapter 17: Promises](chapter_17_Promises/)** — Creating and consuming promises, resolving callback hell, `Promise.all` vs `Promise.allSettled`
 - **[Chapter 18: Async / Await](chapter_18_Async_Await/)** — `async`/`await` syntax, error handling, parallel vs sequential execution, Playwright login test
-- **[Chapter 19: Playwright Basics](chapter_19_Playwright_Basics/)** — Playwright project setup, PDF download example
+- **[Chapter 19: Playwright Basics](chapter_19_Playwright_Basics/)** — Playwright project setup, PDF download example, config and test specs
+- **[Chapter 20: TypeScript Basics](chapter_20_Typescript_Basics/)** — Export/import patterns (default vs named), utility modules, logger
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
