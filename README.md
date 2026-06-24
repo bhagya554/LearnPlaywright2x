@@ -23,7 +23,12 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 17: Promises](chapter_17_Promises/)** — Creating and consuming promises, resolving callback hell, `Promise.all` vs `Promise.allSettled`
 - **[Chapter 18: Async / Await](chapter_18_Async_Await/)** — `async`/`await` syntax, error handling, parallel vs sequential execution, Playwright login test
 - **[Chapter 19: Playwright Basics](chapter_19_Playwright_Basics/)** — Playwright project setup, PDF download example, config and test specs
-- **[Chapter 20: TypeScript Basics](chapter_20_Typescript_Basics/)** — Export/import patterns (default vs named), utility modules, logger
+- **[Chapter 20: Export / Import](chapter_20_Export_Import/)** — Default and named export/import patterns, utility modules, logger
+- **[Chapter 21: Class & Object](chapter_21_Class_Object/)** — Classes, objects, static members, public/private fields
+- **[Chapter 22: Encapsulation](chapter_22_Encapsulation/)** — Data hiding, private fields, getters/setters
+- **[Chapter 23: Inheritance](chapter_23_Inheritance/)** — Single, multilevel, hierarchical inheritance with `extends` and `super`
+- **[Chapter 24: Polymorphism](chapter_24_Polymorphism/)** — Method overriding for runtime polymorphism
+- **[Chapter 25: OOP Interview Questions](chapter_25_OOP_Interview_Questions/)** — Common OOP interview exercises
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
