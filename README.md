@@ -29,6 +29,8 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 23: Inheritance](chapter_23_Inheritance/)** — Single, multilevel, hierarchical inheritance with `extends` and `super`
 - **[Chapter 24: Polymorphism](chapter_24_Polymorphism/)** — Method overriding for runtime polymorphism
 - **[Chapter 25: OOP Interview Questions](chapter_25_OOP_Interview_Questions/)** — Common OOP interview exercises
+- **[Chapter 26: TypeScript](chapter_26_Typescript/)** — TypeScript basics, type annotations, and interview questions
+- **[Chapter 27: TypeScript Interface](chapter_27_TypeScript_Interface/)** — TypeScript interfaces, readonly properties, and contracts
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
