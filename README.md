@@ -31,6 +31,10 @@ A learning repository for Playwright automation testing with JavaScript. Builds 
 - **[Chapter 25: OOP Interview Questions](chapter_25_OOP_Interview_Questions/)** — Common OOP interview exercises
 - **[Chapter 26: TypeScript](chapter_26_Typescript/)** — TypeScript basics, type annotations, and interview questions
 - **[Chapter 27: TypeScript Interface](chapter_27_TypeScript_Interface/)** — TypeScript interfaces, readonly properties, and contracts
+- **[Chapter 28: Enum](chapter_28_Enum/)** — Numeric and string enums, enum with functions and API contexts
+- **[Chapter 29: Generic](chapter_29_Generic/)** — Generic functions, classes, interfaces, and API response patterns
+- **[Chapter 30: Private / Public / Protected](chapter_30_Private_Public_Protected/)** — Access modifiers, readonly, abstract classes, POM pattern
+- **[JS Test Questions](JSTestQuestions/)** — JavaScript practice problems with QA/testing flavour
 - **[Assignments](Assignments/)** — Practice problems
 - **[Task — 20 May 2026](Task_20_May_2026/)** — QA-flavoured `if`/`else` practice problems
 - **[Task — 22 May 2026](Task_22_May_2026/)** — Loops + conditionals practice (FizzBuzz, triangle types)
