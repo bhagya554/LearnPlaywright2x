@@ -12,3 +12,14 @@ node_modules/
 
 # Build output
 dist/
+
+# Generated reports
+/allure-report/
+/allure-results/
+/tta-report/
+
+# Auth / session state (SENSITIVE - do not commit)
+user-session.json
+
+# Local Claude settings
+.claude/
