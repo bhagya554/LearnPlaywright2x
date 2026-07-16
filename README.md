@@ -36,8 +36,34 @@ npx playwright test tests/02_first_tests/
 ## View Reports
 
 ```bash
+# Built-in Playwright HTML report
 npx playwright show-report
 ```
+
+### Custom TTA Report
+
+A custom HTML reporter (`utils/CustomReporter.ts`) is registered in `playwright.config.ts` and runs automatically on every test run. It generates a real-time report with per-step details, console logs, screenshots, video timestamps, and traces.
+
+Output (in `tta-report/`, gitignored):
+
+| File | Purpose |
+| --- | --- |
+| `report_<YYYYMMDD_HHMMSS>.html` | Full report for that run |
+| `index.html` | Redirect to the latest report |
+| `history.html` | Index of all past runs |
+| `screenshots/`, `videos/`, `traces/` | Copied attachments |
+
+Open `tta-report/index.html` after a run.
+
+Steps only appear in the report when test code wraps actions in `test.step()`:
+
+```ts
+await test.step('Navigate to dashboard URL', async () => {
+    await page.goto('https://app.wingify.com/#/dashboard?accountId=1227004');
+});
+```
+
+Optional environment variables: `TEST_ENV` (default `UAT`) and `TEST_AUTHOR` (default `TTA-QA`).
 
 ## Configuration
 
@@ -47,7 +73,7 @@ Key settings in `playwright.config.ts`:
 - **Mode:** Headed, fully parallel
 - **Viewport:** 1920×1080
 - **Trace:** on · **Video:** on · **Screenshot:** only on failure
-- **Reporter:** HTML
+- **Reporters:** HTML · Allure · custom TTA reporter (`utils/CustomReporter.ts`)
 - **Timeout:** 30s per test
 - On CI: retries 2, single worker, `forbidOnly` enforced
 
@@ -58,7 +84,7 @@ Key settings in `playwright.config.ts`:
 ├── fixtures/                # Custom test fixtures
 ├── pages/                   # Page Object Model classes
 ├── test-data/               # Test data files
-├── utils/                   # Helper utilities
+├── utils/                   # Helper utilities (incl. CustomReporter.ts)
 ├── tests/                   # Topic-organized test specs
 ├── playwright.config.ts     # Playwright configuration
 └── package.json             # Dependencies and scripts
@@ -72,7 +98,7 @@ Key settings in `playwright.config.ts`:
 | `02_first_tests` | Browser / context / page, multiple contexts & pages |
 | `03_Locators_Commands` | Locators and commands |
 | `04_Session_Storage` | Session storage |
-| `05_Allure_Reporting` | Allure reporting |
+| `05_Allure_Reporting` | Allure reporting, custom TTA reporter |
 | `06_Multiple_Element_` | Handling multiple elements |
 | `07_WebTables` | Web tables |
 | `08_Web_Select_Frames_Iframe` | Select dropdowns, frames, iframes |
