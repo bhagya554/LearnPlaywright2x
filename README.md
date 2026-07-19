@@ -100,7 +100,7 @@ Key settings in `playwright.config.ts`:
 | `04_Session_Storage` | Session storage |
 | `05_Allure_Reporting` | Allure reporting, custom TTA reporter |
 | `06_Multiple_Elements` | Handling multiple elements |
-| `07_WebTables` | Web tables — dynamic XPath, dynamic columns, following/preceding-sibling, OrangeHRM tasks |
+| `07_WebTables` | Web tables — dynamic XPath, dynamic columns, following/preceding-sibling, filtering, pagination traversal, OrangeHRM tasks |
 | `08_Web_Select_Frames_Iframe` | Select dropdowns, frames, iframes |
 | `09_Frame_Iframe` | Frames and iframes |
 | `10_Keyboard_Hover_Drag_Drop` | Keyboard, hover, drag & drop |
