@@ -102,9 +102,9 @@ Key settings in `playwright.config.ts`:
 | `06_Multiple_Elements` | Handling multiple elements |
 | `07_WebTables` | Web tables — dynamic XPath, dynamic columns, following/preceding-sibling, filtering, pagination traversal, OrangeHRM tasks |
 | `08_Web_Select_Frames_Iframe` | Select dropdowns, frames, iframes |
-| `09_Frame_Iframe` | Frames and iframes |
-| `10_Keyboard_Hover_Drag_Drop` | Keyboard, hover, drag & drop |
-| `11_JS_Alerts` | JavaScript alerts |
+| `09_Frame_Iframe` | iframes, framesets, nested frames |
+| `10_Keyboard_Hover_Drag_Drop` | Keyboard events, hover, drag & drop, advanced drag & drop, right-click |
+| `11_JS_Alerts` | JavaScript dialogs — alert, confirm, prompt (`page.on('dialog')`) |
 | `12_Handle_SVG` | Handling SVG |
 | `13_Shadow_DOM` | Shadow DOM |
 | `14_FileUpload` | File upload |

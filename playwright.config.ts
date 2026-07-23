@@ -13,7 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
-  testMatch:['tests/**/*.spec.ts'],
+  testMatch: ['tests/**/*.spec.ts'],
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -23,8 +23,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html'],["allure-playwright"],["./utils/CustomReporter.ts"]],
-  timeout:30000,
+  reporter: [['html'], ["allure-playwright"], ["./utils/CustomReporter.ts"]],
+  timeout: 30000,
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -32,18 +32,23 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    headless:false,
-    screenshot:'only-on-failure',
-    video:'on',
-    viewport:{width:1920,height:1080},
-    
+    headless: false,
+    screenshot: 'only-on-failure',
+    video: 'on',
+    viewport: { width: 1920, height: 1080 },
+    // viewport: null,
+    //launchOptions: { args: ['--start-maximized'] }
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        //viewport: { width: 1920, height: 1080 }
+      },
+
     },
 
     // {
@@ -52,8 +57,8 @@ export default defineConfig({
     // },
 
     // {
-      // name: 'webkit',
-      // use: { ...devices['Desktop Safari'] },
+    // name: 'webkit',
+    // use: { ...devices['Desktop Safari'] },
     // },
 
     /* Test against mobile viewports. */

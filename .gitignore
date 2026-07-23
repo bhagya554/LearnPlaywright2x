@@ -13,6 +13,9 @@ node_modules/
 # Build output
 dist/
 
+# Test screenshot artifacts written to repo root
+/*.png
+
 # Generated reports
 /allure-report/
 /allure-results/
